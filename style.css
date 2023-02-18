@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-general: 'Roboto Condensed', sans-serif;
+  --fs-title: 2.0rem;
+  --fs-subtitle: 1.2rem;
+  --fs-footer: 1.1rem;
+  --fc-greetingMsg: #F5F5F5;
+  --fc-footer: #6F6F6F;
+
+  --bg-buttons: #D9D9D9;
+  --bg-emailButtonHover: linear-gradient(45deg, #FD7F7C 1.56%, #C23F34 100%);
+  --bg-linkedinButtonHover: linear-gradient(45deg, #78CCFC 0%, #0077B7 100%);
+  --bg-githubButtonHover: linear-gradient(45deg, #835BFA 0%, #B758FF 100%);
+}
+
+body {
+  font-family: var(--ff-general);
+  background: linear-gradient(100deg, #060606 0%, #474747 100%);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+  display: grid;
+  justify-items: center;
+  align-content: flex-start;
+  padding-top: 5.0rem;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  color: var(--fc-greetingMsg);
+}
+
+header img {
+  width: 8.6rem;
+}
+
+.greeting-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.greeting-msg h1 {
+  font-weight: 500;
+  font-size: var(--fs-title);
+}
+
+.greeting-msg p {
+  font-weight: 500;
+  font-size: var(--fs-subtitle)
+}
+
+main {
+  margin-top: 3.0rem;
+}
+
+.route-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2.0rem;
+}
+
+button {
+  background-color: var(--bg-buttons);
+  border: none;
+  padding: 1.0rem 5.0rem;
+  border-radius: 2.2rem;
+  cursor: pointer;
+}
+
+#email-button:hover {
+  background: var(--bg-emailButtonHover);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+}
+
+#linkedin-button:hover {
+  background: var(--bg-linkedinButtonHover);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+}
+
+#github-button:hover {
+  background: var(--bg-githubButtonHover);
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  color: var(--fc-footer);
+}
+/* Animations */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
