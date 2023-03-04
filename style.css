@@ -118,9 +118,14 @@ button {
 }
 
 footer {
-  position: absolute;
-  bottom: 20px;
+  display: flex;
+  justify-content: end;
+  padding: 10.0rem 0 2.0rem 0;
   color: var(--fc-footer);
+}
+
+footer img {
+  width: 7.0rem;
 }
 
 a {
