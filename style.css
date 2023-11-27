@@ -17,6 +17,7 @@
   --bg-emailButtonHover: linear-gradient(45deg, #FD7F7C 1.56%, #C23F34 100%);
   --bg-linkedinButtonHover: linear-gradient(45deg, #78CCFC 0%, #0077B7 100%);
   --bg-githubButtonHover: linear-gradient(45deg, #835BFA 0%, #B758FF 100%);
+  --bg-dressCodeButtonHover: linear-gradient(45deg, #a9a9b8 0%, #57535a 100%);
   --bg-personalInstagram-buttonHover: linear-gradient(255.69deg, #A536B4 3.51%, #CC3189 37.75%, #E03368 56.38%, #F97E2A 85.86%);
 
 }
@@ -51,6 +52,7 @@ header {
 
 header img {
   width: clamp(8.6rem, 8.0rem + 5vw, 12.0rem);
+  border-radius: 50%;
 }
 
 .greeting-msg {
@@ -91,6 +93,11 @@ button {
   border-radius: 2.2rem;
   cursor: pointer;
   width: 100%;
+  height: 5.0rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #email-button:hover {
@@ -121,6 +128,16 @@ button {
   background: var(--bg-linkedinButtonHover);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite;
+}
+
+#dressCode-button:hover {
+  background: var(--bg-dressCodeButtonHover);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+}
+
+#dressCode-button img {
+  width: 20.0rem;
 }
 
 footer {
